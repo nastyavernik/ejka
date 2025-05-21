@@ -18,7 +18,6 @@ def generate_random_description(length=20):
 
 # ─────────────────────── ТЕСТ №1 ───────────────────────
 
-@pytest.mark.skip
 @pytest.mark.project
 def test_create_new_project_after_manual_login(page, credentials):
     """
@@ -76,7 +75,6 @@ def test_create_project_fails_with_empty_description(page, credentials):
 
 # ─────────────────────── ТЕСТ №3 ───────────────────────
 
-@pytest.mark.skip
 @pytest.mark.project
 def test_cancel_project_creation_after_filling_form(page, credentials):
     """
